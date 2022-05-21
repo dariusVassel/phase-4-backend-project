@@ -43,46 +43,46 @@ New Order: /order
    Country:string -->
 
 3. Orders
-   belongs_to: packing
-
    PO Number:integer
-      <!-- supplier_id:integer -->
-
    product_id:integer
-      <!-- buyer_id:integer -->
+   contact_id:integer
+   user_id:integer
+   payment_id
+   packing_id
+
+   cases:integer
+   kilos:integer
 
    selected_size:string
    selected_freeze:string
    selected_glaze:string
-   price:integer
+
    shipment_date:date
-   cases:integer
-   kilos:integer
+
+   port_from:string
+   port_to:string
+
    price_kg:integer
    price:total
-   payment_terms_id
-   packing_id
-   user_id
-   packing_id
-   payment_terms_id
-   port:string
+
+   catching_method
 
 4. Packing
    type:string
    freeze:string
    notes:string
 
-5. Payment Terms
+5. Payment
    type:string
    days:integer
    notes:integer
 
 6. Products
    name:string
-   size_options:integer
-   freeze_options:string
-   glaze_options:string
-   catch_method:string
+   size_options:integer---
+   freeze_options:string---
+   glaze_options:string---
+   catch_method:string---
    image_url:string
 
 7. Users
