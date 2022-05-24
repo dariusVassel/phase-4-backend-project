@@ -21,6 +21,13 @@ Orders route: /orders - list the existing orders
 Detail Orders: /orders/:id
 New Order: /order
 
+<!-- Full Crud Action: -->
+
+Create new order
+Get all my orders
+Update an existing order
+Delete an order
+
 \**Backend:
 *Models:
 

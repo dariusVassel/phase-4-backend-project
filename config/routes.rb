@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
   resources :orders
   resources :users #Currently RESTful Routes
+  resources :products, only: [:index]
+
+  # resources :orders do 
+  #   resources: :products, only: [:create]
+  # end
+    # only: [:index]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
