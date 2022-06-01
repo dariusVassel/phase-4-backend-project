@@ -2,6 +2,11 @@ Rails.application.routes.draw do
   resources :orders
   resources :users #Currently RESTful Routes
   resources :products, only: [:index]
+  resources :contacts, only: [:index]
+
+  # resources :products, do 
+  #   resources: :orders, only: [:create]
+  # end
 
   # resources :orders do 
   #   resources: :products, only: [:create]

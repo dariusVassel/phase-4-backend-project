@@ -5,12 +5,15 @@ class OrdersController < ApplicationController
   def index
     @orders = Order.all
 
-    render json: @orders
+    render json: @orders, include: [:product, :contact]
   end
+
+  
 
   # GET /orders/1
   def show
-    render json: @order
+    order = Order.find_by(id: params[:id])
+    render json: @order, include: [:product, :contact]
   end
 
   # POST /orders
@@ -46,6 +49,6 @@ class OrdersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def order_params
-      params.require(:order).permit(:PO, :cases, :kilos, :price_kg, :price_total, :product_id, :contact_id, :user_id, :payment_id, :packing_id, :port_from, :port_to, :selected_size, :selected_freeze, :selected_glaze, :shipment_date, :catching_method)
+      params.require(:order).permit(:PO, :cases, :kilos, :price_kg, :price_total, :product_id, :contact_id, :payment_id, :packing_id, :port_from, :port_to, :selected_size, :selected_freeze, :selected_glaze, :shipment_date, :catching_method, :specifications, :total_kilos, :order_status, :order_ref_number, :PO_date, :user_id)
     end
 end

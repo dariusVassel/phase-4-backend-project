@@ -11,12 +11,12 @@ class Order < ApplicationRecord
     # validates :kilos, presence: true, numericality: { only_integer: true }
     # validates :price_kg, presence: true, numericality: { only_integer: true }
 
-    validates :product_id, presence: true
-    validates :contact_id, presence: true
+    # validates :product_id, presence: true
+    # validates :contact_id, presence: true
 
-    validates :port_from, presence: true
-    validates :port_to, presence: true
+    # validates :port_from, presence: true
+    # validates :port_to, presence: true
 
-    validates :catching_method, presence: true
+    # validates :catching_method, presence: true
 end
 
