@@ -1,3 +1,5 @@
+## Rails Order Management System
+
 # Requirements
 
 - ruby version: 2.7.3p183
@@ -12,7 +14,7 @@
 - npm install
 - npm start
 
-Frontend Git Link: https://github.com/dariusVassel/phase-4-frontend-project 
+Frontend Git Link: https://github.com/dariusVassel/phase-4-frontend-project
 
 # Licensing
 
