@@ -24,6 +24,9 @@ class OrdersController < ApplicationController
       render json: @order, status: :created, location: @order
     else
       render json: @order.errors, status: :unprocessable_entity
+
+    # rescue ActiveRecord::RecordInvalid => e
+    #   render json: { errors: e.record.errors.full_messages }, status: :unprocessable_entity
     end 
   end
 

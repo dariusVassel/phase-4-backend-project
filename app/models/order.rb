@@ -5,7 +5,7 @@ class Order < ApplicationRecord
     belongs_to :payment
     belongs_to :packing
 
-
+    # validates :PO, presence: true
     # validates :PO, presence: true, uniqueness: true, numericality: { only_integer: true }
     # validates :cases, presence: true, numericality: { only_integer: true }
     # validates :kilos, presence: true, numericality: { only_integer: true }
