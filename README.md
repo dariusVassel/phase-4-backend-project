@@ -1,11 +1,11 @@
-## Rails Order Management System
+# Rails Order Management System
 
-# Requirements
+## Requirements
 
 - ruby version: 2.7.3p183
 - npm version 7.21.0
 
-# How to Use
+## How to Use
 
 - bundle Install
 - run rails db:migrate db:seed
@@ -16,7 +16,7 @@
 
 Frontend Git Link: https://github.com/dariusVassel/phase-4-frontend-project
 
-# Licensing
+## Licensing
 
 Copyright (c) 2012-2022 Samarth Gwalani
 
