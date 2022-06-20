@@ -3,7 +3,7 @@ class OrdersController < ApplicationController
 
   # GET /orders
   def index
-    @orders = Order.all
+    @orders = Order.where(user: current_user)
 
     render json: @orders, include: [:product, :contact]
   end

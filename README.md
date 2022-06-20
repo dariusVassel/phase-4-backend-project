@@ -1,5 +1,7 @@
 # Rails Order Management System
 
+Fullstack application, with a React frontend and Rails backend, used to
+
 ## Requirements
 
 - ruby version: 2.7.3p183
