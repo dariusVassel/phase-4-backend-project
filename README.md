@@ -1,6 +1,17 @@
-# Rails Order Management System
+# withthe tide (Rails Order Management System)
 
 Fullstack application, with a React frontend and Rails backend, used to handle orders for a Seafood company.
+
+## Description
+
+- User Authentication for signup and login procedures with bcrypt security.
+- Log in and manage orders specific to your account.
+- View, update and delete existing orders and create new orders.
+- Fully responsive frontend created with React Material UI and styled components.
+
+## Demonstration
+
+Visual walktrhough of project can be seen here: https://youtu.be/cxwFQYvl5bo
 
 ## Requirements
 
@@ -8,6 +19,9 @@ Fullstack application, with a React frontend and Rails backend, used to handle o
 - npm version 7.21.0
 
 ## How to Use
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+Clone repository and run the following command inside this project's directory to load dependencies
 
 To set up rails backend:
 
