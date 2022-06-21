@@ -11,7 +11,7 @@ Fullstack application, with a React frontend and Rails backend, used to handle o
 
 ## Demonstration
 
-Visual walktrhough of project can be seen here: https://youtu.be/cxwFQYvl5bo
+Visual walkthrough of project can be seen here: https://youtu.be/cxwFQYvl5bo
 
 ## Requirements
 
