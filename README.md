@@ -1,6 +1,6 @@
 # Rails Order Management System
 
-Fullstack application, with a React frontend and Rails backend, used to
+Fullstack application, with a React frontend and Rails backend, used to handle orders for a Seafood company.
 
 ## Requirements
 
@@ -9,12 +9,20 @@ Fullstack application, with a React frontend and Rails backend, used to
 
 ## How to Use
 
-- bundle Install
-- run rails db:migrate db:seed
-- rails s
+To set up rails backend:
 
-- npm install
-- npm start
+```bash
+bundle install
+run rails db:create db:migrate db:seed
+rails s
+```
+
+To set up react frontend:
+
+```bash
+npm install
+npm start
+```
 
 Frontend Git Link: https://github.com/dariusVassel/phase-4-frontend-project
 
