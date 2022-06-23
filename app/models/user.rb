@@ -3,6 +3,7 @@ class User < ApplicationRecord
 
     has_many :orders, dependent: :destroy
     has_many :products, through: :orders
+    has_many :contacts, through: :orders
 
     # validates :username, presence: true, length: {minimum: 2}, uniqueness: true
     # validates :bio, length: {maximum: 280, too_long: "%{count} characters is the maximum allowed" }
