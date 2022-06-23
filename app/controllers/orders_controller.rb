@@ -9,7 +9,7 @@ class OrdersController < ApplicationController
     else
       @orders = Order.where(user: current_user).order(PO_date: :desc)
     end
-      render json: @orders, include: [:product, :contact]
+      render json: @orders
   end
 
   
@@ -17,7 +17,7 @@ class OrdersController < ApplicationController
   # GET /orders/1
   def show
     order = Order.find_by(id: params[:id])
-    render json: @order, include: [:product, :contact]
+    render json: @order
   end
 
   # POST /orders
